@@ -1,5 +1,6 @@
-pyuserinput (0.1.9-1) stable; urgency=low
+pyuserinput (0.1.9-2) trusty; urgency=low
 
+  [ Xu Shaohua ]
   * Initial release
 
- -- Xu Shaohua <xushaohua@linuxdeepin.com>  Wed, 01 Apr 2015 14:32:10 +0800
+ -- pkg-builder <pkg-builder@packages.linuxdeepin.com>  Thu, 07 May 2015 16:52:37 +0800
