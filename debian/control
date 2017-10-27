@@ -1,0 +1,47 @@
+Source: pyuserinput
+Maintainer: Xu Shaohua <xushaohua@linuxdeepin.com>
+Section: python
+Priority: optional
+Build-Depends: debhelper (>= 9),
+               dh-python,
+               python-all (>= 2.6.6-3),
+               python3-all
+Standards-Version: 3.9.5
+X-Python-Version: >= 2.7
+X-Python3-Version: >= 3.0
+Homepage: https://pypi.python.org/pypi/PyUserInput
+Vcs-Browser: https://github.com/SavinaRoja/PyUserInput
+
+Package: python-pyuserinput
+Section: python
+Architecture: all
+Depends: ${misc:Depends},
+         ${python:Depends},
+         python-xlib
+Description: A simple, cross-platform module for mouse and keyboard control
+ A module for cross-platform control of the mouse and keyboard in python that is
+ simple to use.
+ . 
+ Mouse control should work on Windows, Mac, and X11 (most Linux systems).
+ Scrolling is implemented, but users should be aware that variations may
+ exist between platforms and applications.
+ . 
+ Keyboard control works on X11(linux) and Windows systems. Mac control is a work
+ in progress.
+
+Package: python3-pyuserinput
+Section: python
+Architecture: all
+Depends: ${misc:Depends},
+         ${python3:Depends},
+         python3-xlib
+Description: A simple, cross-platform module for mouse and keyboard control
+ A module for cross-platform control of the mouse and keyboard in python that is
+ simple to use.
+ .
+ Mouse control should work on Windows, Mac, and X11 (most Linux systems).
+ Scrolling is implemented, but users should be aware that variations may
+ exist between platforms and applications.
+ .
+ Keyboard control works on X11(linux) and Windows systems. Mac control is a work
+ in progress.

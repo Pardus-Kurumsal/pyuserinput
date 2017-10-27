@@ -1,0 +1,14 @@
+Remove useless arguments while calling grab_keyboard().
+Index: pyuserinput-0.1.9/pykeyboard/x11.py
+===================================================================
+--- pyuserinput-0.1.9.orig/pykeyboard/x11.py	2013-11-07 07:44:58.000000000 +0800
++++ pyuserinput-0.1.9/pykeyboard/x11.py	2015-04-01 15:13:28.950361489 +0800
+@@ -283,7 +283,7 @@
+         """Begin listening for keyboard input events."""
+         self.state = True
+         if self.capture:
+-            self.display2.screen().root.grab_keyboard(True, X.KeyPressMask | X.KeyReleaseMask, X.GrabModeAsync, X.GrabModeAsync, 0, 0, X.CurrentTime)
++            self.display2.screen().root.grab_keyboard(X.KeyPressMask | X.KeyReleaseMask, X.GrabModeAsync, X.GrabModeAsync, X.CurrentTime)
+ 
+         self.display2.record_enable_context(self.ctx, self.handler)
+         self.display2.record_free_context(self.ctx)
